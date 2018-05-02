@@ -55,7 +55,7 @@ else
 
 fi
 
-echo '{"phabricator.uri": "http://phabricator.qcitech.org/"}' >> .arcconfig
+echo '{"phabricator.uri": "http://hosted_phabricator.com/"}' >> .arcconfig
 
 echo
 
@@ -63,9 +63,9 @@ export PATH="$PATH:/$WORKING_DIR/arcanist/bin/"
 
 echo -e "\nexport PATH='$PATH:"$WORKING_DIR"/arcanist/bin/'" >> ~/.bashrc
 
-arc set-config default http://phabricator.qcitech.org/
+arc set-config default http://hosted_phabricator.com/
 
-arc set-config phabricator.uri http://phabricator.qcitech.org/
+arc set-config phabricator.uri http://hosted_phabricator.com/
 
 echo 'source "'$WORKING_DIR'/arcanist/resources/shell/bash-completion"' >> ~/.bashrc
 
